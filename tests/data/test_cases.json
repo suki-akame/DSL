@@ -1,0 +1,16 @@
+{
+    "test_cases": [
+        {
+            "input": "hello",
+            "expected_intent": "问候"
+        },
+        {
+            "input": "我要退款",
+            "expected_intent": "退款"
+        },
+        {
+            "input": "预订酒店",
+            "expected_intent": "预订"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-11-23T14:16:31.666302",
+  "success": false,
+  "test_suites": [
+    "unit",
+    "integration"
+  ],
+  "summary": "部分测试失败"
+}

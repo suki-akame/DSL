@@ -1,4 +1,5 @@
 import os
+import sys
 from interpreter.dsl_parser import parse_script
 from interpreter.script_engine import ScriptEngine
 from nlp.intent_recognizer import IntentRecognizer
@@ -63,6 +64,7 @@ def main():
             if 0 <= choice_idx < len(scenarios):
                 selected_key, selected_scenario = scenario_list[choice_idx]
                 engine.load_script(selected_scenario['script'])
+                engine.set_scenario(selected_scenario['description'])  # 设置AI场景
                 current_scenario = selected_scenario['description']
                 print(f"\n已切换到: {current_scenario}")
                 break
@@ -95,6 +97,7 @@ def main():
                     if 0 <= choice_idx < len(scenarios):
                         selected_key, selected_scenario = scenario_list[choice_idx]
                         engine.load_script(selected_scenario['script'])
+                        engine.set_scenario(selected_scenario['description'])  # 设置AI场景
                         current_scenario = selected_scenario['description']
                         print(f"\n已切换到: {current_scenario}")
                         break
